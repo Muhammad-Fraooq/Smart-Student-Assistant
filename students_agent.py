@@ -8,13 +8,14 @@ load_dotenv()
 
 # Get GEMINI_API_KEY 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
+base_url = os.getenv("BASE_URL")
 if not gemini_api_key:
     raise ValueError("GEMINI_API_KEY environment variable not set")
 
 # Create Gemini client
 client = AsyncOpenAI(
     api_key=gemini_api_key,
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    base_url=base_url
     )
 
 # Create model
