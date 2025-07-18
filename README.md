@@ -24,7 +24,7 @@ Built with Chainlit, OpenAI Agents SDK, and Gemini API.
    ```
 
 3. **Run the App** ▶️
-   ```bash
+   ```bash 
    chainlit run app.py
    ```
    Visit http://localhost:8000.

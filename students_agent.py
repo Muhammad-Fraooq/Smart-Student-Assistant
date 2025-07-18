@@ -1,7 +1,8 @@
-from agents import Agent, Runner,AsyncOpenAI,OpenAIChatCompletionsModel,set_tracing_disabled
+from agents import Agent, Runner,OpenAIChatCompletionsModel,set_tracing_disabled
 from dotenv import load_dotenv
 import chainlit as cl
 import os
+from openai import AsyncOpenAI
 
 # Load environment variables
 load_dotenv()
